@@ -1,0 +1,49 @@
+name: emr_scanner
+description: A Flutter app for scanning and managing EMR records.
+publish_to: 'none'
+
+environment:
+  sdk: '>=2.19.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.3
+  google_sign_in: ^6.2.1
+  path_provider: ^2.1.2
+
+  # Camera access
+  camera: ^0.11.1
+
+  # Image picker for gallery access
+  image_picker: ^1.0.7
+
+  # Google ML Kit Text Recognition
+  google_mlkit_text_recognition: ^0.15.0
+
+  # HTTP client
+  http: ^1.4.0
+
+  # Date formatting
+  intl: ^0.20.2
+
+  # EXIF for image orientation correction
+  exif: ^3.1.0
+
+  # Core Flutter packages
+  cupertino_icons: ^1.0.6
+  image: ^4.5.4
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+  - assets/ic_launcher1.png
+  - assets/hospital.png
+  - assets/doctor.png
+  - assets/laboratory.png
