@@ -7,6 +7,7 @@ The system combines Flutter (Frontend), Node.js + Express (Backend), Python Fast
 It is designed for real-world clinical environments to reduce paperwork and improve record accuracy.
 
 🚀 Key Features
+
 📷 Handwritten Prescription Recognition
 Capture image using mobile camera
 OCR powered by:
@@ -15,6 +16,7 @@ Transformer-based TROCR model
 Extracts raw handwritten medical text
 
 🧠 AI-Based EMR Structuring
+
 Converts unstructured OCR text into structured EMR fields:
 Patient Name
 Age
@@ -26,6 +28,7 @@ Dosage
 Notes
 
 💾 Persistent EMR Storage
+
 Records stored permanently in MySQL
 Not temporary in-memory storage
 Full retrieval and management support
