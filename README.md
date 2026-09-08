@@ -63,7 +63,7 @@ Structured EMR Data
 ### 1. Welcome Screen
 
 <p align="center">
-  <img width="743" alt="Welcome Screen" src="screenshots/welcome.jpeg" />
+  <img width="280" alt="Welcome Screen" src="screenshots/welcome.jpeg" />
 </p>
 
 The welcome screen provides the initial entry point to the application.
@@ -71,7 +71,7 @@ The welcome screen provides the initial entry point to the application.
 ### 2. Sign Up
 
 <p align="center">
-  <img width="743" alt="Sign Up Screen" src="screenshots/signup.jpeg" />
+  <img width="280" alt="Sign Up Screen" src="screenshots/signup.jpeg" />
 </p>
 
 Users can create an account to access the application.
@@ -79,7 +79,7 @@ Users can create an account to access the application.
 ### 3. Login
 
 <p align="center">
-  <img width="743" alt="Login Screen" src="screenshots/login.jpeg" />
+  <img width="280" alt="Login Screen" src="screenshots/login.jpeg" />
 </p>
 
 Registered users can log in to access their records and application features.
@@ -87,7 +87,7 @@ Registered users can log in to access their records and application features.
 ### 4. Forgot Password
 
 <p align="center">
-  <img width="743" alt="Forgot Password Screen" src="screenshots/forgetpassword.jpeg" />
+  <img width="280" alt="Forgot Password Screen" src="screenshots/forgetpassword.jpeg" />
 </p>
 
 The forgot password screen allows users to initiate the password recovery process.
@@ -95,7 +95,7 @@ The forgot password screen allows users to initiate the password recovery proces
 ### 5. Dashboard
 
 <p align="center">
-  <img width="743" alt="Dashboard" src="screenshots/dashboard.jpeg" />
+  <img width="280" alt="Dashboard" src="screenshots/dashboard.jpeg" />
 </p>
 
 The dashboard provides access to the main application features and medical records.
@@ -103,7 +103,7 @@ The dashboard provides access to the main application features and medical recor
 ### 6. Scanner
 
 <p align="center">
-  <img width="743" alt="Scanner" src="screenshots/scanner.jpeg" />
+  <img width="280" alt="Scanner" src="screenshots/scanner.jpeg" />
 </p>
 
 The scanner allows users to capture handwritten medical records for digitization.
@@ -111,7 +111,7 @@ The scanner allows users to capture handwritten medical records for digitization
 ### 7. Scanning & OCR Processing
 
 <p align="center">
-  <img width="743" alt="Scanning and OCR Processing" src="screenshots/scanning.jpeg" />
+  <img width="280" alt="Scanning and OCR Processing" src="screenshots/scanning.jpeg" />
 </p>
 
 The captured medical record is processed using OCR to extract the available text.
@@ -119,7 +119,7 @@ The captured medical record is processed using OCR to extract the available text
 ### 8. Records
 
 <p align="center">
-  <img width="743" alt="Medical Records" src="screenshots/records.jpeg" />
+  <img width="280" alt="Medical Records" src="screenshots/records.jpeg" />
 </p>
 
 Digitized medical records can be stored and retrieved through the application.
