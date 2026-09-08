@@ -1,146 +1,159 @@
-🏥 MedDigitise
+# AI-Powered Text Digitization App
 
-AI-Powered Medical Text Digitisation & EMR System
+An AI-based mobile application that helps digitize handwritten medical records and convert them into structured Electronic Medical Record (EMR) data using OCR.
 
-📌 Overview
+## About the Project
 
-MedDigitise is an AI-powered mobile application that digitizes handwritten medical prescriptions and clinical notes into structured Electronic Medical Records (EMR).
+Handwritten medical records are difficult to store, search, and manage digitally. This project focuses on automating the digitization process by extracting text from handwritten records and converting the extracted information into structured EMR data.
 
-The system combines Flutter (Frontend), Node.js + Express (Backend), Python FastAPI (AI OCR Service), and MySQL (Database) to deliver a complete end-to-end medical digitisation pipeline.
+The application uses Google ML Kit for OCR and a Node.js backend with MySQL for storing and retrieving the processed records.
 
-It is designed for real-world clinical environments to reduce paperwork and improve record accuracy.
+## Features
 
-🚀 Key Features
-📷 Handwritten Prescription Recognition
+* User registration and login
+* Forgot password functionality
+* Dashboard for managing medical records
+* Scan handwritten medical records
+* OCR-based text recognition
+* Structured data extraction
+* Store digitized medical records
+* Retrieve stored medical records
+* Backend REST APIs
 
-Capture image using mobile camera
+## Tech Stack
 
-OCR powered by:
+* **Mobile:** Flutter
+* **OCR:** Google ML Kit Text Recognition
+* **Backend:** Node.js
+* **Database:** MySQL
+* **API:** REST APIs
 
-Google ML Kit (initial phase)
+## How It Works
 
-Transformer-based TROCR model (upgraded AI pipeline)
+```text
+Handwritten Medical Record
+          ↓
+      Flutter App
+          ↓
+    Google ML Kit OCR
+          ↓
+    Text Extraction
+          ↓
+Structured EMR Data
+          ↓
+     Node.js API
+          ↓
+        MySQL
+          ↓
+   Record Storage & Retrieval
+```
 
-Extracts raw handwritten medical text
+## My Contribution
 
-🧠 AI-Based EMR Structuring
+* Developed the mobile application for digitizing handwritten medical records.
+* Implemented the OCR pipeline using Google ML Kit.
+* Worked on extracting and structuring the recognized text into EMR data.
+* Developed backend REST APIs for storing and retrieving medical records.
+* Integrated the backend with MySQL for persistent data storage.
 
-Converts unstructured OCR text into structured EMR fields:
+## Screenshots
 
-Patient Name
+### 1. Welcome Screen
 
-Age
+<p align="center">
+  <img width="743" height="875" alt="Welcome Screen" src="D:\my files\portfolio\public\screenshots\ai-text\welcome.jpeg"/>
+</p>
 
-Gender
+The welcome screen provides the initial entry point to the application.
 
-Symptoms
+### 2. Sign Up
 
-Diagnosis
+<p align="center">
+  <img width="743" height="875" alt="Sign Up Screen" src="D:\my files\portfolio\public\screenshots\ai-text\signup.jpeg" />
+</p>
 
-Medicines
+Users can create an account to access the application.
 
-Dosage
+### 3. Login
 
-Notes
+<p align="center">
+  <img width="743" height="875" alt="Login Screen" src="D:\my files\portfolio\public\screenshots\ai-text\login.jpeg" />
+</p>
 
+Registered users can securely log in to access their records and application features.
 
-💾 Persistent EMR Storage
+### 4. Forgot Password
 
-Records stored permanently in MySQL
+<p align="center">
+  <img width="743" height="875" alt="Forgot Password Screen" src="D:\my files\portfolio\public\screenshots\ai-text\forgetpassword.jpeg" />
+</p>
 
-Not temporary in-memory storage
+The forgot password screen allows users to initiate the password recovery process.
 
-Full retrieval and management support
+### 5. Dashboard
 
-🔎 Smart Search
+<p align="center">
+  <img width="743" height="875" alt="Dashboard" src="D:\my files\portfolio\public\screenshots\ai-text\dashboard.jpeg" />
+</p>
 
-Filter EMR records by:
+The dashboard provides access to the main application features and medical records.
 
-Patient Name
+### 6. Scanner
 
-Patient ID
+<p align="center">
+  <img width="743" height="875" alt="Scanner" src="D:\my files\portfolio\public\screenshots\ai-text\scanner.jpeg" />
+</p>
 
-🗑️ Bulk Record Deletion
+The scanner allows users to capture handwritten medical records for digitization.
 
-Checkbox-based multi-selection
+### 7. Scanning & OCR Processing
 
-Batch delete functionality
+<p align="center">
+  <img width="743" height="875" alt="Scanning and OCR Processing" src="D:\my files\portfolio\public\screenshots\ai-text\scanning.jpeg" />
+</p>
 
-🎨 Modern UI/UX
+The captured medical record is processed using OCR to extract the available text.
 
-Structured scanner UI box
+### 8. Records
 
-Card-based EMR display
+<p align="center">
+  <img width="743" height="875" alt="Medical Records" src="D:\my files\portfolio\public\screenshots\ai-text\records.jpeg" />
+</p>
 
-Styled EMRForm layout
+Digitized medical records can be stored and retrieved through the application.
 
-Animated splash screen (zoom effect)
+## Project Workflow
 
-Welcome screen with pulsing icon & Get Started button
+1. User opens the application.
+2. User creates an account or logs in.
+3. User accesses the dashboard.
+4. User scans a handwritten medical record.
+5. Google ML Kit performs OCR-based text recognition.
+6. The recognized information is structured into EMR data.
+7. The structured data is sent to the backend through REST APIs.
+8. The backend stores the information in MySQL.
+9. Stored medical records can be retrieved through the application.
 
-🏗️ System Architecture
+## Backend
 
-User (Flutter App)
-        ↓
-Capture Image / Voice
-        ↓
-OCR Engine (ML Kit / TROCR via FastAPI)
-        ↓
-Raw Text → Node.js Backend
-        ↓
-AI-Based EMR Formatting
-        ↓
-MySQL Database Storage
-        ↓
-Structured EMR Response
-        ↓
-Display in Flutter UI
-🛠️ Tech Stack
+The Node.js backend provides REST APIs for communication between the mobile application and the database.
 
-📱 Frontend
+The backend handles operations related to:
 
-Flutter
+* Medical record storage
+* Medical record retrieval
+* Communication between the application and database
 
-Dart
+## Database
 
-🌐 Backend
+MySQL is used to store the structured medical record information.
 
-Node.js
+The database provides persistent storage for digitized records and allows stored information to be retrieved when required.
 
-Express.js
+## Future Improvements
 
-🤖 AI OCR Service
-
-Python
-
-FastAPI
-
-TROCR (Transformer-based OCR)
-
-🗄️ Database
-
-MySQL
-
-
-🎯 Problem Solved
-
-During high patient inflow, hospitals struggle with:
-
-Manual prescription handling
-
-Paper record management
-
-Difficulty in retrieving past records
-
-MedDigitise solves this using AI-powered handwritten text recognition and structured EMR storage.
-
-
-📊 Project Status
-
-✅ OCR Integrated
-
-✅ AI EMR Structuring
-
-✅ Backend + Database Connected
-
-✅ Search & Delete Features
+* Improve recognition accuracy for complex handwriting.
+* Improve extraction and validation of medical information.
+* Add authentication and role-based access control.
+* Improve medical record search and management.
+* Add more structured EMR fields.
